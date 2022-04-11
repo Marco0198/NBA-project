@@ -1,0 +1,20 @@
+.footer{
+    margin-top: 100px;
+    background: rgb(186, 21, 21);
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.logo img{
+
+ height:20px;
+   padding: 10px;
+   float: left;
+}
+.right{
+    flex-grow:1;
+    color: aqua;
+    float: left;
+    
+}
