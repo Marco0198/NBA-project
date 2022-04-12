@@ -1,27 +1,26 @@
 import React,{Component} from 'react';
 import axios from 'axios';
 import  {SliderTemplate} from './SliderTemplate'
+import {URL} from '../../../constant'
+
 class NewSlider extends Component{
 state={
     news:[]
 }
 componentDidMount(){
-    axios.get(` http://localhost:4000/articles?_start=0&_end=3`).then(
+    axios.get(` ${URL}/articles?_start=${this.props.start}}&_end=${this.props.amount}`).then(
         response=>{
            this.setState({
                news:response.data
            })
         }
     )
-
 }
     render(){
-        console.log(this.state.news)
+     //   console.log(this.state.news)
         return(
-           <div> SLIDER 
-
-           
-               <SliderTemplate data={this.state.news}/>
+           <div>         
+               <SliderTemplate data={this.state.news} type={this.props.type}/>
            </div> 
         )
     }

@@ -1,8 +1,8 @@
 import React from 'react'
 import './header.css';
 import  {Link} from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars} from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faBars} from '@fortawesome/free-solid-svg-icons'
 
 import SideNav from './Sidenav/sideNave';
 const Header = (props) => {
